@@ -16,7 +16,6 @@ public class UsersTable extends SQL {
             ps.setString(2, (String) ui.getValue(PASS_HASH));
             return ps.executeUpdate() == 1;
         } catch (Exception e) {
-            e.printStackTrace();
             return false;
         }
     }
