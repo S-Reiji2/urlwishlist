@@ -26,6 +26,7 @@ public class PriceHistoryTable extends SQL {
             if (ps.executeUpdate() == 1) trimRecord((Integer) gi.getValue(REC_ID));
             return false;
         } catch (Exception e) {
+            e.printStackTrace();
             return false;
         }
     }
@@ -39,6 +40,7 @@ public class PriceHistoryTable extends SQL {
             ResultSet rs = ps.executeQuery();
             if (rs.next()) if (rs.getInt(1) > MAX_DATE_SIZE) removeOldestRecord(gameID);
         } catch (Exception e) {
+            e.printStackTrace();
         }
     }
     
@@ -51,6 +53,7 @@ public class PriceHistoryTable extends SQL {
             ps.setInt(1, gameID);
             ps.executeUpdate();
         } catch (Exception e) {
+            e.printStackTrace();
         }
     }
     

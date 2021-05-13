@@ -12,6 +12,7 @@ public class LastUpdateTable extends SQL {
             ResultSet rs = ps.executeQuery();
             return rs.next();
         } catch (Exception e) {
+            e.printStackTrace();
             return false;
         }
     }
@@ -24,6 +25,7 @@ public class LastUpdateTable extends SQL {
             ps.setDate(1, new Date(System.currentTimeMillis()));
             return ps.executeUpdate() == 1;
         } catch (Exception e) {
+            e.printStackTrace();
             return false;
         }
     }

@@ -14,6 +14,7 @@ public class WishListTable extends SQL {
             ps.setDate(3, (Date) new Date(System.currentTimeMillis()));
             return ps.executeUpdate() == 1;
         } catch (Exception e) {
+            e.printStackTrace();
             return false;
         }
     }
@@ -27,6 +28,7 @@ public class WishListTable extends SQL {
             ps.setInt(2, (Integer) gameID);
             return ps.executeUpdate() > 0;
         } catch (Exception e) {
+            e.printStackTrace();
             return false;
         }
     }
@@ -42,6 +44,7 @@ public class WishListTable extends SQL {
             if (rs.next()) return (rs.getInt(1) >= 1);
             return false;
         } catch (Exception e) {
+            e.printStackTrace();
             return false;
         }
     }

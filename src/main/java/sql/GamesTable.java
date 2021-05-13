@@ -22,6 +22,7 @@ public class GamesTable extends SQL {
             ps.setDate(5, (Date) gi.getValue(ADD_DATE));
             return ps.executeUpdate() == 1;
         } catch (Exception e) {
+            e.printStackTrace();
             return false;
         }
     }
@@ -37,6 +38,7 @@ public class GamesTable extends SQL {
             
             return rs.next();
         } catch (Exception e) {
+            e.printStackTrace();
             return false;
         }
     }
@@ -61,6 +63,7 @@ public class GamesTable extends SQL {
             
             return gi;
         } catch (Exception e) {
+            e.printStackTrace();
             return null;
         }
     }
@@ -87,6 +90,7 @@ public class GamesTable extends SQL {
             ps.setString(1, url);
             return ps.executeUpdate() == 1;
         } catch (Exception e) {
+            e.printStackTrace();
             return false;
         }
     }
@@ -97,6 +101,7 @@ public class GamesTable extends SQL {
         try {
             return getStmt().executeQuery(sql);
         } catch (Exception e) {
+            e.printStackTrace();
             return null;
         }
     }
@@ -133,6 +138,7 @@ public class GamesTable extends SQL {
             
             return list;
         } catch (Exception e) {
+            e.printStackTrace();
             return null;
         }
     }
