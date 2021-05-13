@@ -19,12 +19,6 @@ public class WishListServlet extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         request.setCharacterEncoding("UTF-8");
 
-        try {
-            Class.forName("org.apache.derby.jdbc.ClientDriver");
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
         ServletContext application = getServletContext();
         String action = request.getParameter("action");
         HttpSession session = request.getSession(false);
