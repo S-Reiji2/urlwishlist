@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+.block {
+    width: 90%;
+    margin: 0 auto;
+    padding: 2vh 2vw;
+}
+
+.box {
+    margin: auto;
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+}
+
+.box div {             
+    width: auto;
+    max-width: 50%;
+    height: 350px;
+    margin: 4px;
+    padding: 4px 10px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.box .text {
+    text-align: left;
+}
+
+
+.box img {
+    max-height: 350px;
+}
+
+.button {
+    min-width: 90%;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    margin: 2vh 0 2vh 0;
+    padding: 5px;
+    background: #fff;
+    color: #333;
+    box-shadow: 4px 4px 10px rgba(3,3,3,0.5);
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.button:hover {
+    opacity: 0.8; 
+}
+
+.contents {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.table {
+    border-collapse: collapse;
+    border-spacing: 5px;
+    box-shadow: 6px 6px 8px rgba(3,3,3,0.5);
+}
+
+.table td, .table th {
+    border: solid 1px #fff;
+    color: #fff;
+    width: 20%;
+    margin: 0 auto;
+}
+
+.table td{
+    background: #666;
+    padding: 1vh 1vw;
+}
+
+.table th {
+    background: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+.title {
+    padding: 5px 0 20px 0;
+}
+
+.wrap {
+    background: #fff;
+    width: 90vw;
+    max-width: 800px;
+    margin: 4vh auto;
+    padding: 2vh 2vw;
+    box-shadow: inset 0px 0px 8px 2px rgba(3,3,3,0.8);
+}
+
+body {
+    background: #333;
+}
+
+h1 {
+    border: 3px solid #999;
+    color: #444;
+    padding-bottom: 8px;
+    border-radius: 30px;
+    height: 75%;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 2vh;
+    margin-bottom: -2vh;
+    text-align: center;
+    overflow: hidden;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+img {
+    box-shadow: 6px 6px 8px rgba(3,3,3,0.5);
+    vertical-align: middle;
+}
+
+input[type="submit"] {
+    text-align: center;
+}
+
+input[type="text"] {
+    width: 60%;
+}
+
+select {
+    width: 100%;
+    border: none;
+    background: #fff;
+    box-shadow: none;
+}
+
+table {
+    width: 90%;
+    height: 90%;
+    margin: 2vh 4vw;
+    margin-left: auto;
+    margin-right: auto;
+}
