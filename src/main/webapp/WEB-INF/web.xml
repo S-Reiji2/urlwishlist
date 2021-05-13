@@ -2,19 +2,19 @@
 <web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
     <servlet>
         <servlet-name>main</servlet-name>
-        <jsp-file>main.jsp</jsp-file>
+        <jsp-file>/main.jsp</jsp-file>
     </servlet>
     <servlet>
         <servlet-name>login</servlet-name>
-        <jsp-file>WEB-INF/login.jsp</jsp-file>
+        <jsp-file>/WEB-INF/login.jsp</jsp-file>
     </servlet>
     <servlet>
         <servlet-name>game</servlet-name>
-        <jsp-file>WEB-INF/game.jsp</jsp-file>
+        <jsp-file>/WEB-INF/game.jsp</jsp-file>
     </servlet>
     <servlet>
         <servlet-name>search</servlet-name>
-        <jsp-file>search.jsp</jsp-file>
+        <jsp-file>/search.jsp</jsp-file>
     </servlet>
     <servlet>
         <servlet-name>GameInfoServlet</servlet-name>
