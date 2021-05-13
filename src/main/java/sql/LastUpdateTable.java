@@ -4,7 +4,7 @@ import java.sql.*;
 
 public class LastUpdateTable extends SQL {
     public static boolean isLatestDB() {
-        String sql = "SELECT date FROM last_update WHERE id = 0 AND date >= ?";
+        String sql = "SELECT date FROM last_update WHERE id = 0 AND date > ?";
         
         try {
             PreparedStatement ps = getPreStmt(sql);
