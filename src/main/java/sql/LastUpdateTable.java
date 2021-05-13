@@ -4,13 +4,10 @@ import java.sql.*;
 
 public class LastUpdateTable extends SQL {
     public static boolean isLatestDB() {
-        String sql = "SELECT date FROM last_update WHERE id = 0 AND date > ?";
+        String sql = "SELECT date FROM last_update WHERE id = 0 AND date >= CURRENT_DATE";
         
         try {
-            PreparedStatement ps = getPreStmt(sql);
-            ps.setDate(1, new Date(System.currentTimeMillis()));
-            ResultSet rs = ps.executeQuery();
-            return rs.next();
+            return getStmt().executeQuery(sql).next();
         } catch (Exception e) {
             e.printStackTrace();
             return false;

@@ -13,7 +13,7 @@ public enum GamePlatform {
         "Steam",
         "<p class=\"game_purchase_discount_countdown\">",
         "https://store.steampowered.com/app/<prodID>/",
-        "?l=japanese",
+        "?cc=jp&l=japanese",
         Pattern.compile("https{0,1}://store\\.steampowered\\.com/app/"),
         Pattern.compile("https{0,1}://store\\.steampowered\\.com/app/(\\d*)/{0,1}.*"),
         Pattern.compile("<span itemprop=\"name\">([^<]*)</span>"),
